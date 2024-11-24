@@ -14,6 +14,11 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 13px 85px 22px 113px;
+
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 header nav menu ul {
@@ -35,10 +40,392 @@ header nav menu ul li a:hover {
     color: #651C31;
 }
 
-cta button {
+cta a {
+    text-decoration: none;
     padding: 13px 24px;
     background-color: #651C31;
     color: white;
     font-size: 16px;
     border-radius: 4px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.video,
+section.banner,
+section.contact {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section.video video,
+section.contact img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section.video .subtitle {
+    font: 25px "gorditamedium";
+    color: white;
+    text-transform: uppercase;
+    max-width: 526px;
+    text-align: center;
+}
+
+section.banner {
+    width: 100%;
+    background-image: url('/images/amptha/bg-proyecto-3.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+}
+
+section.banner card {
+    background-color: #651C3199;
+    max-width: 450px;
+    padding: 24px 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.banner card h1 {
+    text-transform: uppercase;
+    font: 32px "gorditabold";
+    margin-bottom: 0;
+}
+
+section.banner card .description {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-family: "gorditamedium", sans-serif;
+}
+
+section.banner card .text {
+    font-family: "gorditaregular", sans-serif;
+    font-size: 18px;
+}
+
+section.banner card .card-footer {
+    width: 100%;
+    background-color: white;
+    color: #651C31;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    margin-top: 24px;
+    margin-left: -40px;
+    font-family: "gorditamedium", sans-serif;
+    font-size: 16px;
+}
+
+section.banner card .card-footer .price {
+    font-family: "gorditabold";
+}
+
+section.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    gap: 40px;
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+}
+
+section.content .description h1 {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-family: "gorditabold", sans-serif;
+}
+
+section.content .description hr {
+    margin-left: -40px;
+}
+
+section.content .description p {
+    font-family: 'gorditaregular', sans-serif;
+    font-size: 16px;
+    color: #7A7A7A;
+}
+
+section.content video {
+    border-radius: 4px;
+    max-width: 800px;
+    width: 100%;
+}
+
+section.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 80px;
+
+    @media (max-width: 1024px) {
+        padding: 20px;
+    }
+}
+
+section.features hr {
+    width: 100%;
+    border-top: #cccccc;
+}
+
+section.features feature {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    gap: 30px;
+}
+
+section.features icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.features icon .icon {
+    font-size: 50px;
+    color: #651C31;
+}
+
+section.features text p {
+    color: #7A7A7A;
+}
+
+section.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+
+    @media (max-width: 1024px) {
+        padding: 20px;
+    }
+}
+
+section.projects h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section.projects h2 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #81C34D;
+}
+
+section.projects h3 {
+    margin: 0;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+section.projects carrousel {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    overflow: scroll;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+section.projects carrousel card {
+    min-width: 370px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.6),
+        /* Luz interna en la parte superior */
+        inset 0px -4px 4px rgba(0, 0, 0, 0.05),
+        /* Sombra interna en la parte inferior */
+        0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+section.projects carrousel card .card-image {
+    max-width: 370px;
+    max-height: 370px;
+}
+
+
+section.projects carrousel card .card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+section.projects carrousel card .card-body {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+section.projects carrousel card .card-body .description {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+section.projects carrousel card .card-body h3 {
+    color: #651C31;
+    font-size: 22px;
+    text-transform: none;
+    line-height: 1.25;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+section.projects carrousel card .card-body p {
+    color: #353233;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+section.projects carrousel card .card-footer {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: baseline;
+}
+
+section.contact {
+    height: unset;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+
+    @media (max-width: 768px) {
+        height: 350px;
+        padding: 20px;
+        flex-direction: column;
+    }
+}
+
+section.contact h1 {
+    font-size: 34px;
+}
+
+section.contact .text {
+    font-size: 18px;
+}
+
+footer {
+    padding: 80px;
+    background-color: #651C31;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+}
+
+footer nav .logo {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+}
+
+footer nav .logo img {
+    width: 100%;
+}
+
+footer nav h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer nav .links menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: white;
+    gap: 10px
+}
+
+footer nav .links menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: "gorditamedium";
+}
+
+footer nav .social .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer nav .social .icons a {
+    text-decoration: none;
+    background-color: white;
+    color: #651C31;
+    padding: 15px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer hr {
+    width: 100%;
+}
+
+footer copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }

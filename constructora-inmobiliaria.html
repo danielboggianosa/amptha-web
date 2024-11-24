@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="fonts/flaticon.css">
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/amptha/favicon-32x32.png">
     <title>Amptha - Proyectos que mejoran vidas y transforman sociedades</title>
 </head>
 
@@ -143,14 +145,19 @@
                 </ul>
             </menu>
             <cta>
-                <button>Contáctanos</button>
+                <a href="/contact-us">Contáctanos</a>
             </cta>
         </nav>
     </header>
     <main>
         <section class="video">
-            <video src=""></video>
-            <logo></logo>
+            <video class="video-bg" autoplay="" muted="" loop="" playsinline="">
+                <source src="videos/amptha/bg-fondo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <logo>
+                <img src="images/amptha/logo-amptha-white.png" alt="">
+            </logo>
             <span class="subtitle">Proyectos que mejoran vidas y transforman sociedades</span>
         </section>
         <section class="banner">
@@ -160,46 +167,61 @@
                 <span class="text">Medellín 349</span>
                 <span class="text">Acabados de alta gama</span>
                 <span class="text">Departamentos desde 37 m<sup>2</sup></span>
-                <footer>
-                    <span class="text">desde</span>
+                <div class="card-footer">
+                    <span>desde</span>
                     <span class="price">$ 2,000,000 MXN</span>
-                </footer>
+                </div>
             </card>
             <cta>
                 <!-- TOOD: ADD REDIRECT -->
-                <button>Ver Proyectos</button>
+                <a href="#">Ver Proyecto</a>
             </cta>
         </section>
         <section class="content">
-            <h1>Amptha: Compromiso con la Construcción Sostenible</h1>
-            <hr>
-            <p>Con más de 15 años de experiencia en distintos países de Latinoamérica, Amptha es parte de un sólido
-                holding con presencia en múltiples sectores, destacándose en construcción. A lo largo de su
-                trayectoria,ha colaborado en 24 proyectos inmobiliarios junto a reconocidas constructoras de la región.
-            </p>
-            <p>Ahora, consolidada en México, Amptha presenta Amptha Verde: un proyecto de departamentos modernos,
-                funcionales y ecoamigables, diseñados para mejorar la calidad de vida y promover un entorno más
-                sostenible.</p>
-            <video src=""></video>
+            <div class="description">
+                <h1>Amptha: Compromiso con la Construcción Sostenible</h1>
+                <hr>
+                <p>Con más de 15 años de experiencia en distintos países de Latinoamérica, Amptha es parte de un sólido
+                    holding con presencia en múltiples sectores, destacándose en construcción. A lo largo de su
+                    trayectoria,ha colaborado en 24 proyectos inmobiliarios junto a reconocidas constructoras de la
+                    región.
+                </p>
+                <p>Ahora, consolidada en México, Amptha presenta Amptha Verde: un proyecto de departamentos modernos,
+                    funcionales y ecoamigables, diseñados para mejorar la calidad de vida y promover un entorno más
+                    sostenible.</p>
+            </div>
+            <video src="videos/amptha/reel-nosotros-2.mp4" autoplay></video>
         </section>
         <section class="features">
             <hr>
             <feature>
-                <i class="icon flaticon-plan"></i>
-                <h3>Integridad</h3>
-                <p>Actuar con honestidad, ética y transparencia en todas las relaciones con clientes, proveedores,
-                    empleados y la comunidad.</p>
+                <icon>
+                    <i class="icon flaticon-plan"></i>
+                </icon>
+                <text>
+                    <h3>Integridad</h3>
+                    <p>Actuar con honestidad, ética y transparencia en todas las relaciones con clientes, proveedores,
+                        empleados y la comunidad.</p>
+                </text>
             </feature>
             <feature>
-                <i class="icon flaticon-compass"></i>
-                <h3>Sostenibilidad</h3>
-                <p>Promover prácticas de desarrollo sostenible que protejan el medio ambiente para las generaciones
-                    futuras.</p>
+                <icon>
+                    <i class="icon flaticon-compass"></i>
+                </icon>
+                <text>
+                    <h3>Sostenibilidad</h3>
+                    <p>Promover prácticas de desarrollo sostenible que protejan el medio ambiente para las generaciones
+                        futuras.</p>
+                </text>
             </feature>
             <feature>
-                <i class="icon flaticon-architect"></i>
-                <h3>Compromiso con el cliente</h3>
-                <p>Brindar un servicio al cliente excepcional que supere las expectativas.</p>
+                <icon>
+                    <i class="icon flaticon-architect"></i>
+                </icon>
+                <text>
+                    <h3>Compromiso con el cliente</h3>
+                    <p>Brindar un servicio al cliente excepcional que supere las expectativas.</p>
+                </text>
             </feature>
         </section>
         <section class="projects">
@@ -208,76 +230,95 @@
             <h3>Medellín 349</h3>
             <carrousel>
                 <card>
-                    <image>
-                    </image>
-                    <span class="description">Diseño, confort y sostenibilidad</span>
-                    <span class="title">Departamentos de lujo desde 37 m<sup>2</sup></span>
-                    <ul>
-                        <li>Medellín 349</li>
-                        <li>Área: 37 m<sup>2</sup></li>
-                        <li>Dormitorios: 1 dorm</li>
-                    </ul>
-                    <button>Ver Proyecto</button>
+                    <div class="card-image">
+                        <img src="images/amptha/portada-proyecto.png" alt="portada de proyecto">
+                    </div>
+                    <div class="card-body">
+                        <span class="description">Diseño, confort y sostenibilidad</span>
+                        <h3>Departamentos de lujo desde 37 m<sup>2</sup></h3>
+                        <p>Medellín 349</p>
+                        <p>Área: 37 m<sup>2</sup></p>
+                        <p>Dormitorios: 1 dorm</p>
+                    </div>
+                    <div class="card-footer">
+                        <cta>
+                            <a href="#">Ver Proyecto</a>
+                        </cta>
+                    </div>
                 </card>
                 <card>
-                    <image>
-                    </image>
-                    <span class="description">Diseño, confort y sostenibilidad</span>
-                    <span class="title">Acabados de alta gama y cocina equipada</span>
-                    <ul>
-                        <li>Medellín 349</li>
-                        <li>Área: 44.5 m<sup>2</sup></li>
-                        <li>Dormitorios: 2 dorm</li>
-                    </ul>
-                    <button>Ver Proyecto</button>
+                    <div class="card-image">
+                        <img src="images/amptha/cocina-equipada.jpeg" alt="cocina equipada">
+                    </div>
+                    <div class="card-body">
+                        <span class="description">Diseño, confort y sostenibipdad</span>
+                        <h3>Acabados de alta gama y cocina equipada</h3>
+                        <p>Medellín 349</p>
+                        <p>Área: 44.5 m<sup>2</sup></p>
+                        <p>Dormitorios: 2 dorm</p>
+                    </div>
+                    <div class="card-footer">
+                        <cta>
+                            <a href="#">Ver Proyecto</a>
+                        </cta>
+                    </div>
                 </card>
                 <card>
-                    <image>
-                    </image>
-                    <span class="description">Diseño, confort y sostenibilidad</span>
-                    <span class="title">Excelente ubicación</span>
-                    <ul>
-                        <li>Medellín 349</li>
-                        <li>Área: 45 m<sup>2</sup></li>
-                        <li>Dormitorios: 2 dorm</li>
-                    </ul>
-                    <button>Ver Proyecto</button>
+                    <div class="card-image">
+                        <img src="images/amptha/excelente-ubicacion.jpeg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="description">Diseño, confort y sostenibilidad</span>
+                        <h3>Excelente ubicación</h3>
+                        <p>Medellín 349</p>
+                        <p>Área: 45 m<sup>2</sup></p>
+                        <p>Dormitorios: 2 dorm</p>
+                    </div>
+                    <div class="card-footer">
+                        <cta>
+                            <a href="#">Ver Proyecto</a>
+                        </cta>
+                    </div>
                 </card>
             </carrousel>
         </section>
         <section class="contact">
+            <img src="images/amptha/contact-bg.webp" alt="" srcset="">
             <div>
                 <h1>Conoce más sobre nuestros proyectos</h1>
                 <span class="text">Comunicate con nosotros y conoce más sobre los proyectos que tenemos para ti.</h2>
             </div>
             <cta>
-                <button>Contáctanos</button>
+                <a href="#">Contáctanos</a>
             </cta>
         </section>
         <footer>
             <nav>
-                <logo>
+                <div class="logo">
                     <img src="images/amptha/logo-amptha-footer.png" alt="logo amptha">
-                </logo>
-                <links>
-                    <h3>Enlaces</h3>
+                </div>
+                <div class="links">
+                    <h3>Enlaces:</h3>
                     <menu>
-                        <ul>
-                            <li><a href="grupo-empresarial">Grupo Empresarial Amptha</a></li>
-                            <li><a href="constructora-inmobiliaria">Constructora e Inmobiliaria</a></li>
-                            <li><a href="blog">Blog</a></li>
-                            <li><a href="contact-us">Contáctanos</a></li>
-                        </ul>
+                        <a href="grupo-empresarial">Grupo Empresarial Amptha</a>
+                        <a href="constructora-inmobiliaria">Constructora e Inmobiliaria</a>
+                        <a href="blog">Blog</a>
+                        <a href="contact-us">Contáctanos</a>
                     </menu>
-                </links>
-                <social>
+                </div>
+                <div class="social">
                     <h3>Síguenos en nuestras redes sociales:</h3>
-
-                </social>
+                    <div class="icons">
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-instagram"></span></a>
+                        <a href="#"><span class="fa fa-youtube"></span></a>
+                    </div>
+                </div>
             </nav>
             <hr>
             <copyright>
-                <span>Copyright ©<span id="current-year"></span>. ® Todos los derechos reservados AMPTHA.</span>
+                <p>Copyright ©<span id="current-year"></span>. ® Todos los derechos reservados AMPTHA.</p>
             </copyright>
         </footer>
     </main>
