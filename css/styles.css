@@ -5,7 +5,60 @@ body {
 header {
     display: flex;
     width: 100%;
-    height: 109px;
+    height: max-content;
+}
+
+header nav.mobile {
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+header nav.mobile .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav.mobile .menu-header i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #651C31;
+}
+
+header nav.mobile menu {
+    display: none;
+    padding: 0;
+}
+
+header #menu-icon-close {
+    display: none;
+}
+
+nav.mobile.active menu {
+    display: flex;
+    width: 100%;
+}
+
+nav.mobile.active #menu-icon-close {
+    display: flex;
+}
+
+nav.mobile.active #menu-icon {
+    display: none;
+}
+
+nav.mobile.active menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
 }
 
 header nav {
@@ -14,8 +67,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 13px 85px 22px 113px;
-
-
+    
     @media (max-width: 1024px) {
         display: none;
     }
