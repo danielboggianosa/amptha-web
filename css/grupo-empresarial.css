@@ -1,0 +1,129 @@
+section.banner-cta {
+    background-image: url('/images/amptha/bg-grupo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+section.banner-cta .card-cta {
+    padding: 48px 20px 10px 20px;
+    background-color: #35323380;
+    display: block;
+    min-width: 300px;
+    max-width: 394px;
+    max-height: 317px;
+    color: white;
+    margin-right: 115px;
+    margin-bottom: -44px;
+}
+
+section.banner-cta .card-cta h1 {
+    font-size: 32px;
+}
+
+section.banner-cta .card-cta p {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+section.banner-cta .card-cta cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section.banner-cta .card-cta cta a {
+    width: 70%;
+    text-align: center;
+    z-index: 1000;
+}
+
+section.common-areas {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px;
+}
+
+section.common-areas h1 {
+    font-size: 32px;
+}
+
+section.common-areas span {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section.common-areas .downloads cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+section.common-areas .downloads cta a {
+    text-align: center;
+    width: 60%;
+}
+
+section.planos {
+    background-color: #353233dd;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    color: white;
+    padding: 30px;
+}
+
+section.planos h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+section.planos .flats {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.planos .flats .flat {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.planos .flats .flat cta a {
+    display: flex;
+    justify-content: center;
+}
+
+section.galery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+section.galery .carrousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+section.galery .carrousel .images {
+    width: 100%;
+}
+
+section.galery .carrousel button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}

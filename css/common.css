@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: max-content;
+}
+
+header nav.mobile {
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+header nav.mobile .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav.mobile .menu-header i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #651C31;
+}
+
+header nav.mobile menu {
+    display: none;
+    padding: 0;
+}
+
+header #menu-icon-close {
+    display: none;
+}
+
+nav.mobile.active menu {
+    display: flex;
+    width: 100%;
+}
+
+nav.mobile.active #menu-icon-close {
+    display: flex;
+}
+
+nav.mobile.active #menu-icon {
+    display: none;
+}
+
+nav.mobile.active menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 85px 22px 113px;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+header nav menu ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style-type: none;
+}
+
+header nav menu ul li a {
+    text-decoration: none;
+    color: #141B2D;
+    font-family: "gorditamedium", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header nav menu ul li a:hover {
+    color: #651C31;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: unset;
+    padding: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+
+    @media (max-width: 768px) {
+        height: 350px;
+        padding: 20px;
+        flex-direction: column;
+    }
+}
+
+section.contact img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+section.contact h1 {
+    font-size: 34px;
+}
+
+section.contact .text {
+    font-size: 18px;
+}
+
+footer {
+    padding: 80px;
+    background-color: #651C31;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+}
+
+footer nav .logo {
+    width: 180px;
+    height: 180px;
+}
+
+footer nav .logo img {
+    width: 100%;
+}
+
+footer nav h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer nav .links menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: white;
+    gap: 10px
+}
+
+footer nav .links menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: "gorditamedium";
+}
+
+footer nav .social .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer nav .social .icons a {
+    text-decoration: none;
+    background-color: white;
+    color: #651C31;
+    padding: 15px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer hr {
+    width: 100%;
+}
+
+footer copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+cta a {
+    text-decoration: none;
+    padding: 13px 24px;
+    background-color: #651C31;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+}
